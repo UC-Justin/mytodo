@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- font awesome-->
+<link href="font/css/fontawesome.css" rel="stylesheet">
+<link href="font/css/brands.css" rel="stylesheet">
+<link href="font/css/solid.css" rel="stylesheet">
+
+<link rel="stylesheet" href="TodoStyle.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <header>
+        <h1>Task List 2022</h1>
+        <form id="new-task-form">
+            <div>
+                <input type="text" id="new-task-input" placeholder="what do you have planned ?" />
+                <input type="submit" id="new-task-submit" value="Add task" />
+            </div>
+            <textarea type="text" id="new-task-input-description" placeholder="Please add description"></textarea>
+        </form>
+    </header>
+
+    <main>
+        <section class="task-list">
+            <h2>Tasks</h2>
+            <div id="tasks">
+                <div class="task">
+                    <div class="check-box">
+                        <i class = "fas fa-check"></i>
+                    </div>
+                    <div class="content">
+                        <input type="text" class="text" value="My task" readonly>
+                    </div>
+                    <div class="actions">
+                        <div class="options">
+                            <li class="fa fa-ellipsis-v"></li>
+                        </div>
+                        <ul>
+                            <li><button class="description">Show description</button></li>
+                            <li><button class="edit">Edit</button></li>
+                            <li><button class="delete">Delete</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <textarea  readonly class="task-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo fuga reiciendis est animi? Et, dignissimos quod architecto sapiente harum expedita ducimus eligendi illum aut explicabo temporibus ipsum quis consequatur est.</textarea> -->
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="TodoScript.js"></script>
+</body>
+</html>
